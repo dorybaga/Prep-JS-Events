@@ -10,7 +10,7 @@
 
 /*Exercise 3. fill in the spaces to make this function operate:*/
   function showAnswer(){
-    document.getElementById(_______).________ = " C (da sea get it?) arrrr!";
+    document.getElementById("pirate").innerHTML = " C (da sea get it?) arrrr!";
   }
 
 /*Exercise 4.  Instruct the following function to display the message "My name is Lee, Brrruuuce Lee!" in the paragraph element after the button is clicked.*/

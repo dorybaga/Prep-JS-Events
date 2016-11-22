@@ -67,15 +67,21 @@ function random(){
   document.getElementById("displayQuotes").innerHTML = (quotes[Math.floor(Math.random()*quotes.length)]);
 }
 
-  // for (i=0; i<quotes.length; i++){
-
                                                    
 /*Exercise 8. Create an event listener that will show and hide the message when clicking on the button.*/
-
-
+document.getElementById("hideandseek").addEventListener("click", showHide);
+function showHide (){
+  var secret = document.getElementById("showmoney");
+  if(secret.style.display === "none"){
+    secret.style.display = "block";
+  } else {
+    secret.style.display = "none";
+  }
+}
 
 /*Final Boss:
-Make a visual list of the items in the orders array. When clicking on the product, you must show and hide the price for that item.*/
+Make a visual list of the items in the orders array. 
+When clicking on the product, you must show and hide the price for that item.*/
 
 
 var orders = [{product: "Finger Toothbrush", price: 9.99}, {product: "Barry Manilow's Greatest Hits Collection Vol 1", price: 500.01}, {product: "Goldfish Aquairum Phone Booth", price: 199.99}, {product: "Woof Washer 360", price: 9.99}, {product: "Sauna Pants", price: 39.95}, {product: "Noiseless Mute Karaoke Microphone", price: 79.99}, {product: "Necktie Umbrella", price: 16.86}];

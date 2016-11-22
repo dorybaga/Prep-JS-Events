@@ -24,14 +24,15 @@
 //Please write your code inside the window.onload function for exerices 5 onward...
 
 window.onload = function (){
-/*Exercise 5. Add an event listener to the quotes button that will display a quote after it is clicked on.</p>*/
+/*Exercise 5. Add an event listener to the quotes button that will display a 
+quote after it is clicked on.</p>*/
 
 var firstQuote = "Our lives are defined by opportunities; even the ones we miss.";
 
-_________.getElementById(________).addEventListener(______, sayQuote);
+document.getElementById("Benjamin").addEventListener("click", sayQuote);
 
 function sayQuote(){
-  document._________(_______).__________ = __________;
+  document.getElementById("Benjamin").innerHTML = firstQuote;
 }
 
 

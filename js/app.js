@@ -36,13 +36,18 @@ function sayQuote(){
 }
 
 
-/*Exercise 6. Add another event listener to the image below that will display an inspirational quote from our beloved DJ Khaled after it is clicked</p>*/
+/*Exercise 6. Add another event listener to the image below that will display an 
+inspirational quote from our beloved DJ Khaled after it is clicked</p>*/
 
-document.getElementById().addEventListener("click", rap);
+document.getElementById("khaled").addEventListener("click", rap);
 
 // function (){
 //   document = "another one, another one, another one...and another one";
 // }
+function rap(){
+  document.getElementById("wedabest").innerHTML = "another one, another one, another one...and another one";
+
+}
 
 
 /*Exercise 7.  Generate a random quote from clicking on a button*/

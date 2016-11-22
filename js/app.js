@@ -86,8 +86,60 @@ When clicking on the product, you must show and hide the price for that item.*/
 
 var orders = [{product: "Finger Toothbrush", price: 9.99}, {product: "Barry Manilow's Greatest Hits Collection Vol 1", price: 500.01}, {product: "Goldfish Aquairum Phone Booth", price: 199.99}, {product: "Woof Washer 360", price: 9.99}, {product: "Sauna Pants", price: 39.95}, {product: "Noiseless Mute Karaoke Microphone", price: 79.99}, {product: "Necktie Umbrella", price: 16.86}];
 
+for (i=0; i<orders.length; i++){
+  // console.log(orders[i].product);
+  // console.log(orders[i].price);
+
+var myProducts = document.createElement('div');
+myProducts.className = 'products';
+myProducts.innerHTML = orders[i].product;
+myOrders.appendChild(myProducts);
+
+var myPrice = document.createElement('div');
+myPrice.className = 'price list';
+myPrice.innerHTML = orders[i].price;
+myPrice.style.display = "none";
+myProducts.appendChild(myPrice);
+}
+
+
+var productElement = document.getElementsByClassName("products");
+  // console.log(productElement);
+for (var i =0; i<productElement.length; i++){
+  // console.log(productElement[i]);
+  productElement[i].addEventListener("click", toggle);
+}
+
+function toggle (){
+  var showPrice = this.querySelectorAll(".price")[0];
+  console.log(this);
+  if (showPrice.style.display === "none"){
+    showPrice.style.display = "block";
+  } else {
+    showPrice.style.display = "none";
+
+  }
+}
 
 };
+
+
+// document.getElementsByClassName("myProducts").addEventListener("click", toggle);
+
+// function toggle (){
+//   var flip = document.getElementById("myProducts");
+//   if(flip.style.display === "none") {
+//     flip.style.display = "block";
+//   } else {
+//     flip.style.display = "none";
+//   }
+// }
+
+
+
+
+
+
 
 
 

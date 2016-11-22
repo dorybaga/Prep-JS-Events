@@ -10,7 +10,7 @@
 
 /*Exercise 3. fill in the spaces to make this function operate:*/
   function showAnswer(){
-    document.getElementById("pirate").innerHTML = " C (da sea get it?) arrrr!";
+    document.getElementById("answer").innerHTML = " C (da sea get it?) arrrr!";
   }
 
 /*Exercise 4.  Instruct the following function to display the message "My name is Lee, Brrruuuce Lee!" in the paragraph element after the button is clicked.*/
@@ -32,7 +32,7 @@ var firstQuote = "Our lives are defined by opportunities; even the ones we miss.
 document.getElementById("Benjamin").addEventListener("click", sayQuote);
 
 function sayQuote(){
-  document.getElementById("Benjamin").innerHTML = firstQuote;
+  document.getElementById("lines").innerHTML = firstQuote;
 }
 
 
@@ -53,6 +53,21 @@ function rap(){
 /*Exercise 7.  Generate a random quote from clicking on a button*/
 var quotes = ["It's a funny thing about comin' home. Looks the same, smells the same, feels the same. You'll realize what's changed is you.", "Momma? Momma? Some days, I feel different than the day before.", "Some people, were born to sit by a river. Some get struck by lightning. Some have an ear for music. Some are artists. Some swim. Some know buttons. Some know Shakespeare. Some are mothers. And some people, dance.", "For what it's worth, it's never too late to be whoever you want to be."];
 
+// document.getElementById("change").addEventListener("click", randomQuote);
+
+// function randomQuote (){
+//   var randomString = quotes[Math.floor(Math.random()*quotes.length)];
+//       document.getElementById("displayQuotes").innerHTML = randomString;
+
+// }
+
+document.getElementById("change").addEventListener("click", random);
+
+function random(){
+  document.getElementById("displayQuotes").innerHTML = (quotes[Math.floor(Math.random()*quotes.length)]);
+}
+
+  // for (i=0; i<quotes.length; i++){
 
                                                    
 /*Exercise 8. Create an event listener that will show and hide the message when clicking on the button.*/
